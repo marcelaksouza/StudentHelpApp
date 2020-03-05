@@ -1,6 +1,7 @@
 const express = require ("express");
 const router = express.Router();
 const BookingController = require('../services/booking/bookingControler');
+
 require('../shared/db');
 
 router
@@ -9,7 +10,7 @@ router
 
 router
 .route("/booking/:instructorID")
-.post(BookingController.createBooking)
+.post(BookingController.createBooking);
 
 router
 .route("/booking/:bookingID")

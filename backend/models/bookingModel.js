@@ -12,7 +12,7 @@ const bookingSchema = new mongoose.Schema({
     },
     instructor : {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Student"
+        ref: "Student",
     },
     student : {
         type: mongoose.Schema.Types.ObjectId,
